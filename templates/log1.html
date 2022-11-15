@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" href="{{ url_for('static', filename='log1.css')}}">
+	</head>
+<body>
+	<div class="login-wrap">
+		<div class="login-html">
+			<input id="tab-1" type="radio" name="tab" class="sign-in" checked><label for="tab-1" class="tab">Sign In</label>
+			<input id="tab-2" type="radio" name="tab" class="sign-up"><label for="tab-2" class="tab">Sign Up</label>
+			<div class="login-form">
+				<div class="sign-in-htm">
+					<form action="/log1" method="post">
+					<div class="group">
+						<label for="user" class="label">Username</label>
+						<input id="user" type="text" class="input"placeholder="Your username" required>
+					</div>
+					<div class="group">
+						<label for="pass" class="label">Password</label>
+						<input id="pass" type="password" class="input" data-type="password"placeholder="Your password" required>
+					</div>
+					<div class="group">
+						<input id="check" type="checkbox" class="check" checked>
+						<label for="check"><span class="icon"></span> Keep me Signed in</label>
+					</div>
+					<div class="group">
+						<input type="submit" class="button" value="Sign In">
+					</div>
+					<div class="hr"></div>
+					<div class="foot-lnk">
+						<label for="tab-2">forget password?</a>
+						</div>
+					</form>
+				</div>
+				
+
+
+
+				<div class="sign-up-htm">
+					<form action="/register" method="post">
+					<div class="group">
+						<label for="name" class="label">name</label>
+						<input id="name" type="text" class="input" data-type="input"placeholder="Your name" required>
+					</div>
+					<div class="group">
+						<label for="user" class="label">Username</label>
+						<input id="user" type="text" class="input"placeholder="Your username" required>
+					</div>
+					<div class="group">
+						<label for="pass" class="label">Password</label>
+						<input id="pass" type="password" class="input" data-type="password"placeholder="password" required>
+					</div>
+					<div class="group">
+						<label for="phone number" class="label">phone number</label>
+						<input id="tel" type="tel" class="input" data-type="tel"placeholder="+91 000 000 0000" required>
+					</div>
+					<div class="group">
+						<label for="pass" class="label">Email Address</label>
+						<input id="pass" type="text" class="input"placeholder="Your email address" required>
+					</div>
+					<div class="group">
+						<a href="log1.html"><input type="submit" class="button"  value="Sign Up" placeholder="SIGN UP"></a>
+						
+					</div>
+					<div class="hr"></div>
+					<div class="foot-lnk">
+						<label for="tab-1">Already Member?</a>
+					</div>
+				</form>
+				</div>
+			</div>
+		</div>
+	</div>	
+	
+</body>
+</html>
+
