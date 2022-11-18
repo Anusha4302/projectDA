@@ -5,7 +5,9 @@
   padding: 0;
   box-sizing: border-box;
 }
-
+body{
+  background-image:url(stati"globalagriculture.jpg");
+}
 body,
 input {
   font-family: "Poppins", sans-serif;
